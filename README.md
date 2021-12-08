@@ -5,6 +5,8 @@ Single cell joint embedding and modality prediction with autoencoder. JAE achiev
 
 ## Model description
 
+JAE was inspired from our previous work [scDEC](https://www.nature.com/articles/s42256-021-00333-y) (Nat Mach Intell 3, 536–544, 2021). On the one hand, we simplified scDEC model by removing the discriminators, on the other hand, we add more constrains to the latent features where scDEC only requires latent features to recover cell type and JAE requires latent features to recover cell type, batch id, and cell cycle phase scores.
+
 In brief, we built an autoencoder for joint embedding (JAE). Each modality will first be SVD transformed and concatenated together (denoted as x). The major difference from standard AE is that we incorporated the information from cell annotations (e.g., cell label, cell cycle score, and cell batch) to constrain the structure of latent features. We desire that some latent features (c) predict the cell type information, some features predict the cell cycle score. Noticeably, for feature (b), we want it to predict the batch label as randomly as possible to potentially eliminate the batch effect. z has no constrain at all to ensure the flexibility of neural network.
 
 In the pretrain stage, JAE was trained with exploration data where the cell annotation information (cell type, cell cycle phase score) is available. In the test stage where the cell annotation information is not available, we only minimize the reconstruction loss of the autoencoder with a smaller learning rate (fine-tune).
@@ -25,6 +27,10 @@ One can run `python 1_pca_pretrain.py` to get the SVD transformation for each mo
 **Step 2**: Autoencoder pretrain with regularizing latent features simulteneously
 
 One can run `python 2_ae_pretrain_multiome.py` or `python 2_ae_pretrain_cite.py` to pretrain JAE with Multiome or CITE-seq data, respectively. The pretrained model weight file will be saved.
+
+## Contact
+
+Feel free to open a issue or contact liuqiao@stanford.edu if you have any problem.
 
 
 
