@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/436108428.svg)](https://zenodo.org/badge/latestdoi/436108428)
+
 # JAE
 Single cell joint embedding and modality prediction with autoencoder. JAE achieves the **first place** in [NeurIPS 2021 single cell competition](https://openproblems.bio/neurips_2021/) Joint Embedding tasks (see [Leaderboard](https://eval.ai/web/challenges/challenge-page/1111/leaderboard/2863),team: Amateur). This work was invited to give a talk at NeurIPS 2021 workshop (see slides [here](http://liu-q16.github.io/files/nips_competition.pdf)).
 
