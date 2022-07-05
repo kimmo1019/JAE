@@ -34,5 +34,13 @@ One can run `python 2_ae_pretrain_multiome.py` or `python 2_ae_pretrain_cite.py`
 
 Feel free to open a issue or contact liuqiao@stanford.edu if you have any problem.
 
+## Citation
+
+If you use JAE in your word, please kindly consider citing the following two works.
+
+[1] Liu Q, Chen S, Jiang R, et al. Simultaneous deep generative modelling and clustering of single-cell genomic data[J]. Nature machine intelligence, 2021, 3(6): 536-544.
+
+[2] Lance C, Luecken M D, Burkhardt D B, et al. Multimodal single cell data integration challenge: results and lessons learned[J]. bioRxiv, 2022.
+
 
 
