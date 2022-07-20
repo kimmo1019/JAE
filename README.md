@@ -36,7 +36,7 @@ Feel free to open a issue or contact liuqiao@stanford.edu if you have any proble
 
 ## Citation
 
-If you use JAE in your word, please kindly consider citing the following two works.
+If you use JAE in your work, please kindly consider citing the following two works.
 
 [1] Liu Q, Chen S, Jiang R, et al. Simultaneous deep generative modelling and clustering of single-cell genomic data[J]. Nature machine intelligence, 2021, 3(6): 536-544.
 
